@@ -1,2 +1,70 @@
+:root {
+  --primary: #1e1e29;
+  --bg: #f0f0f3;
+
+  --text: var(--primary);
+  --text-light: #1e1e29d7;
+}
+
+html,
+body {
+  margin: 0;
+  display: grid;
+  min-height: 100vh;
+  grid-template: auto 1fr / 1fr;
+  font-family: 'Montserrat', sans-serif;
+}
+nav {
+  padding: 15px 20px;
+  background-color: var(--primary);
+  color: var(--bg);
+}
+
+nav .nav__link {
+  color: unset;
+  text-decoration: none;
+}
+
+nav .nav__link-title {
+  font-size: 150%;
+}
+
+main {
+  padding: 60px 20px 20px 20px;
+  background-color: var(--bg);
+  color: var(--primary);
+}
+
+h1 > a,
+h2 > a,
+h3 > a,
+h4 > a,
+h5 > a,
+h6 > a {
+  color: unset;
+  text-decoration: none;
+  position: relative;
+}
+h1 > a:hover::after,
+h2 > a:hover::after,
+h3 > a:hover::after,
+h4 > a:hover::after,
+h5 > a:hover::after,
+h6 > a:hover::after {
+  position: absolute;
+  content: ' 🔗 ';
+  display: block;
+  left: 100%;
+  top: 0;
+  opacity: 0.5;
+}
+
+.joke {
+  font-style: italic;
+  font-weight: bold;
+  text-align: justify;
+  color: var(--text-light);
+}
+
 
 /*# sourceMappingURL=/style.e308ff8e.css.map */
